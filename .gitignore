@@ -1,0 +1,20 @@
+# Ignore Visual Studio temporary files
+.vs/
+*.suo
+*.user
+*.VC.db
+*.vscode/
+
+# Ignore build directories
+Debug/
+Release/
+x64/
+x86/
+CMakeFiles/
+
+# Ignore executables
+*.exe
+*.dll
+*.obj
+*.pdb
+*.idb
