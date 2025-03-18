@@ -13,32 +13,23 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="models">
-      <UniqueIdentifier>{a258651f-3ed0-43de-ad75-17a58628df5d}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="EyeTracker.cpp">
+    <ClCompile Include="EyeTrackerServer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="generated\eye_tracker.grpc.pb.cc">
+    <ClCompile Include="eye_tracker.grpc.pb.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="generated\eye_tracker.pb.cc">
+    <ClCompile Include="eye_tracker.pb.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="models\shape_predictor_68_face_landmarks.dat">
-      <Filter>models</Filter>
-    </None>
-    <None Include="Proto\eye_tracker.proto" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="generated\eye_tracker.grpc.pb.h">
+    <ClInclude Include="eye_tracker.grpc.pb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="generated\eye_tracker.pb.h">
+    <ClInclude Include="eye_tracker.pb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package eye_tracker;
+
+// Define gRPC service
+service EyeTrackerService {
+  rpc StreamEyeData (stream EyeData) returns (stream FatigueAlert);
+}
+
+// Message sent from EyeTracker to server
+message EyeData {
+  float blink_rate = 1;
+  float ear = 2;
+  float pupil_dilation = 3;
+  float gaze_focus = 4;
+  int64 timestamp = 5;
+}
+
+// Message received from server as an alert
+message FatigueAlert {
+  string message = 1;
+  bool take_break = 2;
+}
